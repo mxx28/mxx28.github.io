@@ -15,13 +15,9 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Co-founder & CTO at{' '}
-          <a href="https://promptfoo.dev" className="hero-highlight">
-            Promptfoo
-          </a>
-          , the most widely adopted open-source LLM security platform.
+          MSc in Data Science
           <br />
-          Building AI products for over a decade.
+          Research in ML and NLP
         </p>
 
         <div className="hero-chips">
