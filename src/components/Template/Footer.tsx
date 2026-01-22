@@ -14,7 +14,7 @@ export default function Footer() {
           </Link>
           <div className="footer-info">
             <h3>Oscar</h3>
-            <p className="footer-role">CTO & Co-founder</p>
+            <p className="footer-role">ML enthusiast</p>
             <p className="footer-copyright">
               &copy; {new Date().getFullYear()} ·{' '}
               <a

@@ -15,16 +15,16 @@ export default function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          MSc in Data Science
+          Student in Data Science
           <br />
           Research in ML and NLP
         </p>
 
-        <div className="hero-chips">
+        {/* <div className="hero-chips">
           <span className="hero-chip">YC Alum</span>
           <span className="hero-chip">Stanford ICME</span>
           <span className="hero-chip">Co-founded Arthena & Matroid</span>
-        </div>
+        </div> */}
 
         <div className="hero-cta">
           <Link href="/about" className="button button-primary">

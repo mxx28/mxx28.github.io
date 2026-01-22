@@ -35,6 +35,11 @@ export const metadata: Metadata = {
     template: `%s | ${AUTHOR_NAME}`,
   },
   description: siteDescription,
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/images/favicon/apple-icon.png',
+  },
   keywords: [
     AUTHOR_NAME,
     'LLM security',
