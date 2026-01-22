@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          <span className="hero-name">Michael D&apos;Angelo</span>
+          <span className="hero-name">Oscar</span>
         </h1>
 
         <p className="hero-tagline">
