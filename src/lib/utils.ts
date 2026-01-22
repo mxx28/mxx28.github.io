@@ -4,7 +4,7 @@
 
 // Site configuration
 export const SITE_URL = 'https://mldangelo.com';
-export const AUTHOR_NAME = "Michael D'Angelo";
+export const AUTHOR_NAME = "Oscar's website";
 export const TWITTER_HANDLE = '@dangelosaurus';
 
 // Image dimension constants
