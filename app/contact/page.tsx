@@ -7,7 +7,7 @@ import PageWrapper from '@/components/Template/PageWrapper';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: "Contact Michael D'Angelo via email @ hi@mldangelo.com",
+  description: "Contact Oscar via email @ xinxian.ma@epfl.ch",
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
           </div>
 
           <div className="contact-divider">
-            <span>or find me on</span>
+            <span>find me on</span>
           </div>
 
           <ContactIcons />
