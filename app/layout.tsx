@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Raleway, Source_Sans_3 } from 'next/font/google';
 import Script from 'next/script';
+import 'katex/dist/katex.min.css';
 
 import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
 import Navigation from '@/components/Template/Navigation';

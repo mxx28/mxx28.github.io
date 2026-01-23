@@ -1,10 +1,9 @@
-import Markdown from 'markdown-to-jsx';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ArticleSchema } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import { getPostBySlug, getPostSlugs } from '@/lib/posts';
+import { processMarkdownWithMath } from '@/lib/markdown';
 import { AUTHOR_NAME, formatDate, SITE_URL } from '@/lib/utils';
 
 interface PageProps {
@@ -57,6 +56,8 @@ export default async function PostPage({ params }: PageProps) {
     notFound();
   }
 
+  const htmlContent = processMarkdownWithMath(post.content);
+
   return (
     <PageWrapper>
       <ArticleSchema post={post} />
@@ -68,31 +69,10 @@ export default async function PostPage({ params }: PageProps) {
           <h1 className="post-title">{post.title}</h1>
           <p className="post-description">{post.description}</p>
         </header>
-        <div className="post-content prose">
-          <Markdown
-            options={{
-              overrides: {
-                img: {
-                  component: ({ alt, src }: { alt?: string; src?: string }) => (
-                    <Image
-                      src={src || ''}
-                      alt={alt || ''}
-                      width={1200}
-                      height={630}
-                      loading="lazy"
-                      style={{
-                        width: '100%',
-                        height: 'auto',
-                      }}
-                    />
-                  ),
-                },
-              },
-            }}
-          >
-            {post.content}
-          </Markdown>
-        </div>
+        <div
+          className="post-content prose"
+          dangerouslySetInnerHTML={{ __html: htmlContent }}
+        />
       </article>
     </PageWrapper>
   );
